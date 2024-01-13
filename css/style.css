@@ -7,9 +7,16 @@
     --primary-font-color: #5A6482;
 }
 
-header,
+header {
+    padding: 0 calc(50% - 800px);
+}
+
 section,
 footer {
+    padding: 0 calc(50% - 700px);
+}
+
+section:nth-child(1) {
     padding: 0 calc(50% - 800px);
 }
 
@@ -183,7 +190,7 @@ a:hover::after {
 }
 
 .greeting-wrapper {
-    padding: 223px 0 0 50px;
+    padding: 223px 0 196px 50px;
     max-width: 510px;
 }
 
@@ -201,4 +208,197 @@ a:hover::after {
 
 .greeting .getMyPrice-button {
     margin-top: 40px;
+}
+
+.secure {
+    padding-top: 85px;
+    padding-bottom: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white-second-color);
+}
+
+.secure__img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 20px;
+}
+
+.secure__img-container img {
+    background-color: var(--white-color);
+    box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.04);
+    padding: 31px 43px;
+    width: 600px;
+    height: auto;
+}
+
+.secure__img-container__text {
+    color: var(--primary-font-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+}
+
+.secure__img-container__text::before {
+    content: '*';
+    color: var(--accent-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+}
+
+.secure__text-container {
+    max-width: 439px;
+}
+
+.secure__text-container__title {
+    margin: 27px 0 20px;
+}
+
+.secure__text-container__button {
+    display: flex;
+    column-gap: 8px;
+    color: #126F86;
+    margin-top: 34px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+}
+
+.secure__text-container__button::after {
+    position: relative;
+    bottom: -1px;
+    content: url(../img/icons/greenRightArrow.svg);
+}
+
+.technology {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 148px;
+    padding-bottom: 164px;
+}
+
+.technology__img-container__text::before {
+    content: '*';
+    color: var(--accent-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+}
+
+.technology__text-container {
+    max-width: 439px;
+}
+
+.technology__text-container__title {
+    margin: 27px 0 20px;
+}
+
+.technology__text-container__button {
+    display: flex;
+    column-gap: 8px;
+    color: #126F86;
+    margin-top: 34px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+}
+
+.technology__text-container__button::after {
+    position: relative;
+    bottom: -1px;
+    content: url(../img/icons/greenRightArrow.svg);
+}
+
+.technology__img-container {
+    position: relative;
+}
+
+.technology__img-container::before {
+    content: url(../img/icons/dots.svg);
+    position: absolute;
+    top: -35px;
+    left: -45px;
+    z-index: 2;
+}
+
+.technology__img-container::after {
+    content: "There's also human help 👋";
+    padding: 20px 25px;
+    position: absolute;
+    bottom: -25px;
+    left: -60px;
+    z-index: 4;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 3px 4px 34px 0px rgba(66, 71, 77, 0.11);
+}
+
+.technology__img-container img {
+    position: relative;
+    width: 600px;
+    z-index: 3;
+}
+
+.topRated {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F8F8F8;
+    padding-top: 91px;
+    padding-bottom: 85px;
+    text-align: center;
+}
+
+.topRated-title {
+    margin: 30px 0 37px;
+}
+
+.topRated--content {
+    display: flex;
+    column-gap: 120px;
+    justify-content: space-between;
+    margin-top: 41px;
+}
+
+.topRated--content__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 330px;
+    background: #FFF;
+    box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.04);
+}
+
+.topRated--content__block-title {
+    color: var(--main-font-color);
+    margin: 17px 0 12px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.topRated--content__block-text {
+    color: var(--primary-font-color);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25.6px;
+    max-width: 220px;
+}
+
+.topRated--content__block-text span {
+    color: var(--main-font-color);
+    cursor: pointer;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-decoration-line: underline;
 }
