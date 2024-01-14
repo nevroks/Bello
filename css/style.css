@@ -480,3 +480,137 @@ a:hover::after {
     font-weight: 400;
     line-height: 26px;
 }
+
+.gotThis {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 148px;
+    padding-bottom: 164px;
+    background: #F9F5F2;
+}
+
+.gotThis__img-container__text::before {
+    content: '*';
+    color: var(--accent-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+}
+
+.gotThis__text-container {
+    max-width: 550px;
+}
+
+.gotThis__text-container__title {
+    margin: 27px 0 20px;
+}
+
+.gotThis__text-container__button {
+    display: flex;
+    column-gap: 8px;
+    color: #126F86;
+    margin-top: 34px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+}
+
+.gotThis__text-container__button::after {
+    position: relative;
+    bottom: -1px;
+    content: url(../img/icons/greenRightArrow.svg);
+}
+
+.gotThis__img-container {
+    position: relative;
+}
+
+.gotThis__img-container::before {
+    content: url(../img/icons/dots.svg);
+    position: absolute;
+    top: -35px;
+    left: -45px;
+    z-index: 2;
+}
+
+.gotThis__img-container::after {
+    font-family: 'Roboto', sans-serif;
+    content: "Nerd out in our Learning Center 🤓";
+    padding: 20px 25px;
+    position: absolute;
+    bottom: -25px;
+    right: 44px;
+    z-index: 4;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 3px 4px 34px 0px rgba(66, 71, 77, 0.11);
+}
+
+.gotThis__img-container img {
+    position: relative;
+    width: 600px;
+    z-index: 3;
+}
+
+.info {
+    display: grid;
+    grid-template-rows: 1fr;
+    column-gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 160px;
+    padding-bottom: 140px;
+}
+
+.info__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 373px;
+    padding: 40px 10px 30px 20px;
+    position: relative;
+}
+
+.info__block-title {
+    color: inherit;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.info__block-text {
+    color: #5A6482;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19.2px;
+    margin: auto 0 84px;
+    position: absolute;
+    top: 50%;
+}
+
+.info__block-button img {
+    position: relative;
+    bottom: -5px;
+}
+
+.info__block:nth-child(1) {
+    color: #7CAFDD;
+    background: rgba(169, 216, 255, 0.30);
+}
+
+.info__block:nth-child(2) {
+    color: #E79751;
+    background: rgba(255, 174, 104, 0.30);
+}
+
+.info__block:nth-child(3) {
+    color: #FA5240;
+    background: rgba(250, 82, 64, 0.30);
+}
+
+.info__block:nth-child(4) {
+    color: #126F85;
+    background: rgba(18, 111, 133, 0.30);
+}
