@@ -19,8 +19,10 @@
     section:nth-child(1) {
         padding: 0 calc(50% - 800px);
     }
-    /* font-family: 'Roboto',
-sans-serif; */
+    
+    .none {
+        display: none !important;
+    }
     
     * {
         font-family: 'Work Sans', sans-serif;
@@ -720,4 +722,251 @@ sans-serif; */
         color: var(--main-font-color);
         line-height: 16px;
         text-transform: uppercase;
+    }
+    
+    @media (max-width:1600px) {
+        header,
+        section,
+        footer {
+            padding: 0 calc(50% - 650px);
+        }
+        .preFooter {
+            overflow: hidden;
+        }
+        .preFooter::before {
+            left: -2%;
+        }
+        .preFooter::after {
+            right: 10%;
+        }
+    }
+    
+    @media (max-width:1300px) {
+        header,
+        section,
+        footer {
+            padding: 0 calc(50% - 500px);
+        }
+        .greeting-wrapper {
+            position: relative;
+            z-index: 4;
+        }
+        .greeting::after {
+            width: 60%;
+            left: 2%;
+            z-index: 0;
+            opacity: 0.8;
+        }
+        .secure {
+            column-gap: 100px;
+        }
+        .secure__text-container {
+            max-width: 350px;
+        }
+        .secure__text-container__button {
+            margin-top: 26px;
+            font-size: 16px;
+        }
+        .topRated--content {
+            column-gap: 90px;
+        }
+        .topRated--content__block {
+            width: 270px;
+            height: 280px;
+        }
+        .gotThis {
+            column-gap: 20px;
+        }
+        .preFooter::before {
+            display: none;
+        }
+        .preFooter::after {
+            right: 5%;
+        }
+    }
+    
+    @media (max-width:1000px) {
+        header,
+        section,
+        footer {
+            padding: 0 calc(50% - 400px);
+        }
+        h1 {
+            font-size: 60px;
+            line-height: 58px;
+        }
+        h2 {
+            font-size: 45px;
+            line-height: 40px;
+        }
+        .preTitle {
+            font-size: 12px;
+        }
+        .text-medium {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        .text-large {
+            font-size: 22px;
+            line-height: 38px;
+        }
+        .getMyPrice-button {
+            font-size: 14px;
+            padding: 18px 26px;
+        }
+        .header__content-list {
+            font-size: 13px;
+        }
+        .header--button__wrapper-login {
+            font-size: 13px;
+            padding: 5px 15px;
+        }
+        .header--button__wrapper-getMyPrice {
+            padding: 6px 15px;
+            font-size: 12px;
+        }
+        .header__content-img {
+            margin-right: 20px;
+        }
+        .greeting::after {
+            display: none;
+        }
+        .topRated::after {
+            display: none;
+        }
+        .topRated--content {
+            gap: 90px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .topRated__umbrella-img {
+            position: absolute;
+            top: -110px;
+            transform: translate(-50%, 0);
+            left: 50%;
+            width: 400px;
+            height: 250px;
+        }
+        .gotThis__text-container {
+            max-width: 300px;
+        }
+        .info {
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        .preFooter::after {
+            right: 0%;
+        }
+        .footer__wrapper {
+            align-items: center;
+            row-gap: 60px;
+            flex-direction: column-reverse;
+        }
+    }
+    
+    @media (max-width:800px) {
+        header,
+        section,
+        footer {
+            padding: 0 calc(50% - 300px);
+        }
+        h1 {
+            font-size: 50px;
+            line-height: 48px;
+        }
+        h2 {
+            font-size: 40px;
+            line-height: 35px;
+        }
+        .preTitle {
+            font-size: 12px;
+        }
+        .text-medium {
+            font-size: 16px;
+            line-height: 26px;
+        }
+        .text-large {
+            font-size: 20px;
+            line-height: 33px;
+        }
+        .getMyPrice-button {
+            font-size: 13px;
+            padding: 18px 26px;
+        }
+        .secure {
+            flex-direction: column-reverse;
+            row-gap: 60px;
+        }
+        .secure__img-container img {
+            width: 500px;
+            height: auto;
+        }
+        .technology__text-container {
+            max-width: 300px;
+        }
+        .technology__img-container::after {
+            padding: 10px 15px;
+            left: -30px;
+        }
+        .gotThis__img-container::after {
+            padding: 10px 15px;
+            left: -30px;
+        }
+        .howItWorks__content {
+            gap: 100px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .preFooter .text-medium {
+            max-width: 500px;
+            text-align: center;
+        }
+    }
+    
+    @media (max-width:600px) {
+        header,
+        section,
+        footer {
+            padding: 0 calc(50% - 155px);
+        }
+        .header__content-img {
+            width: 60px;
+            height: 30px;
+        }
+        .header--button__wrapper {
+            display: none;
+        }
+        .technology__img-container {
+            display: none;
+        }
+        .gotThis__img-container {
+            display: none;
+        }
+        .info {
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: 1fr;
+        }
+        .preFooter h2 {
+            text-align: center;
+        }
+        .preFooter .text-medium {
+            max-width: 290px;
+        }
+        .preFooter::after {
+            right: -1%;
+        }
+        .footer__info {
+            flex-direction: column;
+            row-gap: 40px;
+        }
+        .footer__info--list li:nth-child(1) {
+            color: black;
+            font-weight: 600;
+        }
+        .footer__content--label button img {
+            width: 18px;
+        }
     }
